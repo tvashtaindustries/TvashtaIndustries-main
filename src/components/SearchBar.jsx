@@ -10,9 +10,9 @@ export default function SearchBar() {
         placeholder="Customize your theme menu here"
       />
       <span className="search-bar-icon">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M15.232 2.23205C15.6131 1.85099 16.2206 1.85099 16.6017 2.23205L17.7679 3.39823C18.149 3.77929 18.149 4.38683 17.7679 4.76789L6.56066 15.9751C6.37219 16.1636 6.12064 16.2929 5.84853 16.3416L3 16.8333L3.49168 13.9851C3.54039 13.713 3.6697 13.4614 3.85817 13.2729L15.232 2.23205Z" stroke="#222" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="icon-md text-token-text-secondary hover:text-token-text-primary" id="el-1mj02ijt">
+        <path d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="el-100nhij7"></path>
+      </svg>
       </span>
     </div>
   );
