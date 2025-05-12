@@ -1,0 +1,21 @@
+.final{
+    width: 100%;
+    color:  rgb(140, 140, 140);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:small;
+}
+.leftcom{
+    text-align: left;
+}
+.rightcom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.whitebold:hover{
+    color: white;
+    cursor: pointer;
+}

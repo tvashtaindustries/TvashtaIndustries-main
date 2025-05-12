@@ -1,5 +1,7 @@
+
 .hero-section {
   position: relative;
+  width: 98.5%;
   height: 400px;
   background: url('/apppic.jpeg') center/cover no-repeat;
   display: flex;
@@ -7,13 +9,15 @@
   justify-content: center;
   text-align: center;
   border-radius: 5px;
+  margin-left: 18px;
+  margin-bottom: 60px;
 }
 
 .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 99%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
@@ -30,8 +34,9 @@
 
 .hero-content h3 {
     text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 10px;
+  color: white;
 }
 
 .hero-content p {

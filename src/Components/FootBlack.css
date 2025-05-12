@@ -1,54 +1,68 @@
+
+
 .bg{
-    background-color: #3e3c3c;
+    background-color: #0f0e0e;
+    width: 100%;
+    padding: 20px;
+}
+.botcontainer{
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
 }
 .hero-section1 {
   position: relative;
-  height: 400px;
-  background: url('/apppic.jpeg') center/cover no-repeat;
+  height: 250px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('/apppic2.jpeg') center/cover no-repeat;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: left;
+  text-align: left;
   border-radius: 5px;
 }
 
 .hero-overlay1 {
   position: absolute;
   top: 0;
-  left: -20px;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.50);
   border-radius: 5px;
 }
 
 .hero-content1 {
+    width: 45vw;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
   position: relative;
-  color: white;
+  color: rgb(255, 255, 255);
   z-index: 1;
   padding: 20px;
+  padding-left: 4rem;
 }
 
-.hero-content1 h3 {
-    text-align: center;
-  font-size: 3rem;
+.hero-content1 h2 {
+    text-align: left;
+  font-size: 2.05rem;
   margin-bottom: 10px;
 }
 
 .hero-content1 p {
-    text-align: center;
+    color: rgb(214, 214, 214);
+    text-align: left;
   font-size: 1.1rem;
   margin-bottom: 20px;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .hero-button1 {
     margin: auto;
-  background-color: #e62737;
+  background-color: #d61f2f;
   border: none;
   color: white;
-  padding: 12px 24px;
+  padding: 12px 28px;
   font-size: 1rem;
   border-radius: 6px;
   cursor: pointer;
@@ -56,5 +70,12 @@
 }
 
 .hero-button1:hover {
-  background-color: #c00d2b;
+  background-color: #ae0c27;
 }
+.thinline{
+   border: none;
+  height: 0.25px;
+  background-color: #929292;
+  margin: 20px 0;
+}
+
