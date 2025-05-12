@@ -1,24 +1,122 @@
 .products-section{
-    max-width: 1200px; 
+    text-align: center;
+    background-color: #f9f9f9;
     margin: 48px auto;
-    padding: 0 24px;
+    padding: 50px 24px;
     text-align: center;
 }
 
 .products-title {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
     color: #1a202c;
-    
+    margin-bottom: 0.5rem;
   }
 
   .products-desc {
     color: #6b7280;
     font-size: 1.15rem;
     margin-bottom: 2.5rem;
-    width: 70%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
   
+
+  .products-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    
+  }
+
+  .products-card {
+    position: relative;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .products-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  .products-img-wrapper {
+    overflow: hidden;          
+    height: 16rem;
+    width: 100%;
+  }
+  
+  .products-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  .products-card:hover .products-img {
+    transform: scale(1.1);
+    box-shadow: inset 0 -40px 60px rgba(0, 0, 0, 1); 
+  }
+  
+  .products-content {
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem; 
+    text-align: left;
+    
+  }
+  
+  .products-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #1c1c1c;
+  }
+  
+  .products-content p {
+    font-size: 1.05rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .products-content li {
+    list-style: none;
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+    font-size: 0.95rem;
+  }
+  
+  .products-content li::before {
+    content: '✔';
+    color: #e63946;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+  }
+  
+  .products-btn {
+    background-color: #ef233c;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;
+    transition: background 0.3s ease;
+  }
+  
+  .products-btn:hover {
+    background-color: #cc2f3d;
+  }

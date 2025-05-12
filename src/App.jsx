@@ -2,6 +2,8 @@ import './App.css'
 import Hero from './Components/Hero'
 import Details from './Components/Details'
 import Svgcom from './Components/Svgcom'
+import FootBlack from './components/FootBlack'
+import HeroSection from './components/HeroSection'
 import Header from './components/Header'
 import Services from './components/Services'
 import OurProjects from './components/OurProjects'
@@ -34,8 +36,9 @@ function App() {
       <Svgcom title='Expert Team' desc='Skilled professionals at your service'/>
       <Svgcom title='Innovative Solutions' desc='Modern designs and technologies'/>
       <Svgcom title='Customer Satisfaction' desc='Client-focused approach'/>
-      <button className='btn1'>Get in Touch</button>
+      
        </div>
+       <button className='btn1'>Get in Touch</button>
 
         
       </div>
@@ -46,6 +49,12 @@ function App() {
     <Services/>
     <OurProjects/>
     <Products/>
+    <div className="cont">
+      <h2>Visit Our Office</h2>
+      <p>Find us at our headquarters or at one of our regional offices across India.</p>
+    </div>
+    <HeroSection/>
+    <FootBlack/>
     </>
   )
 }
