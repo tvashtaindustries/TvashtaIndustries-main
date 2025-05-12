@@ -2,11 +2,18 @@ import './App.css'
 import Hero from './Components/Hero'
 import Details from './Components/Details'
 import Svgcom from './Components/Svgcom'
+import Header from './components/Header'
+import Services from './components/Services'
+import OurProjects from './components/OurProjects'
+import Products from './components/Products'
+
+
 function App() {
 
   return (
     <>
-    <Hero/>
+      <Header/>
+      <Hero/>
     <div className="container">
       <Details title='10+' desc='Years Experience'/>
       <Details title='200+' desc='Projects Completed'/>
@@ -36,7 +43,10 @@ function App() {
         <img src="https://images.unsplash.com/photo-1526546334624-2afe5b01088d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MXx8bW9kZXJuJTIwYXJjaGl0ZWN0dXJlJTIwZmlybSUyMG9mZmljZXxlbnwwfHx8fDE3NDY2ODkzNzN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="" />
       </div>
     </div>
-      </>
+    <Services/>
+    <OurProjects/>
+    <Products/>
+    </>
   )
 }
 

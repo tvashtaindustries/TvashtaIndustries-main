@@ -1,0 +1,21 @@
+.red-button{
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ef233c;
+    background-color: #e11d48;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top : 50px;
+    margin-bottom : 60px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    
+  
+}
+
+.red-button:hover{
+  background-color: #d21e35;
+  color: white;
+  transform: scale(1.02);
+}
