@@ -51,7 +51,9 @@ export default function OurProjects() {
           projects.map((project, idx) => {
             return (
               <div className="our-projects-card">
-                <img src={project.img} className="our-projects-img" />
+                <div className="our-projects-image-wrapper">
+                  <img src={project.img} className="our-projects-img" />
+                  </div>
                 <div className="our-projects-content">
                   <h3>{project.title}</h3>
                   <p>{project.desc}</p>
