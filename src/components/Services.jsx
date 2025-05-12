@@ -1,6 +1,7 @@
-
+import './RedButton.jsx';
 import './Services.css';
 import image from '../assets/services1.jpeg';
+import RedButton from './RedButton.jsx';
 const services = [
   {
     title: 'Architecture Design',
@@ -57,7 +58,7 @@ export default function Services() {
           </div>
         ))}
       </div>
-      <button className='services-button'>Request a Consultation</button>
+        <RedButton text = "Request a Consultation"/>
     </div>
   );
 } 

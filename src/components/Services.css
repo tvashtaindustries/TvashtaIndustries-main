@@ -16,6 +16,9 @@
     color: #6b7280;
     font-size: 1.15rem;
     margin-bottom: 2.5rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .services-cards {
@@ -88,22 +91,3 @@
     color: #d90429;
   } 
   
-  .services-button{
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 8px;
-      border: 1px solid #ef233c;
-      background-color: #e11d48;
-      color: white;
-      cursor: pointer;
-      transition: background 0.3s ease, border 0.3s ease;
-      margin-top : 50px;
-      margin-bottom : 60px;
-      
-    
-  }
-  
-  .services-button:hover{
-    background-color: #d21e35;
-    color: white;
-  }

@@ -1,5 +1,5 @@
 .our-projects-section{
-    /* max-width: 1200px; */
+    max-width: 1200px; 
     margin: 48px auto;
     padding: 0 24px;
     text-align: center;
@@ -17,7 +17,7 @@
     color: #6b7280;
     font-size: 1.15rem;
     margin-bottom: 2.5rem;
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -37,8 +37,8 @@
     border-radius: 16px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.07);
     overflow: hidden;
-    width: 375px;
-    height: 275px;
+    width: 350px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 8px 32px rgba(0,0,0,0.2);
@@ -65,13 +65,13 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(1.5px);
   color: #fff;
-  padding-top: 7rem;
-  padding-left: 2rem;
+  padding-top: 20%;
+  padding-left: 5%;
   opacity: 0;
-  transition: all 0.4s ease;
+  transition: all 0.8s ease;
   text-align: left;
   }
 

@@ -4,6 +4,7 @@ import './App.css'
 import Header from './components/Header'
 import Services from './components/Services'
 import OurProjects from './components/OurProjects'
+import Products from './components/Products'
 
 
 function App() {
@@ -11,12 +12,13 @@ function App() {
 
   return (
     
-    <>
+    <div className="main-container">
     <Header/>
     <Services/>
     <OurProjects/>
+    <Products/>
       
-    </>
+    </div>
   )
 }
 
