@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './HeroSection.css'; // We'll create this CSS file next
 
@@ -15,3 +16,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+

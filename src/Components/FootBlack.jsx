@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Industries from './Industries'
 import Links from './Links'
@@ -31,3 +32,4 @@ const FootBlack = () => {
 }
 
 export default FootBlack
+
