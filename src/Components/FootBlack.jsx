@@ -2,7 +2,7 @@
 import React from 'react'
 import Industries from './Industries'
 import Links from './Links'
-import Services from './Services'
+import MyServices from './MyServices'
 import Information from './Information'
 import './FootBlack.css'
 import HeroSection2 from './HeroSection2'
@@ -21,7 +21,7 @@ const FootBlack = () => {
      <div className="botcontainer">
       <Industries/>
       <Links/>
-      <Services/>
+      <MyServices/>
       <Information/>
      </div>
      <HeroSection2/>
