@@ -1,9 +1,11 @@
 .con{
     display: flex;
     justify-content: left;
-    align-items: center;
-    max-width: 15vw;
-    padding: 5px;
+    align-items: left;
+    max-width: 25vw;
+    padding: 10px;
+    padding-left: 0px;
+    margin-left: 0px;
     max-height: 150px;
 }
 .svg{
@@ -13,12 +15,14 @@
      border: 2px ;
   border-radius: 50%;
   padding: 6px;
+  margin: 5px;
 }
 h3{
     padding: 0px;
     margin: 0px;
     text-align: left;
     font-family:'Sora ','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
 }
 h4{
     margin-top: 0px;

@@ -1,0 +1,38 @@
+.lnkb{
+    color: white;
+    width: 25vw;
+    padding-top:50px;
+    margin-left: -25px;
+}
+.lnkb .flex{
+    display: flex;
+    width: 18vw;
+    max-height: 50px;
+    margin: 10px;
+    margin-left: 20px;
+    align-items: left;
+    gap: 25px;
+}
+
+.lnkb h2{
+    text-align: left;
+}
+.lnkb h4{
+    margin: 5px;
+    text-align: left;
+    color: rgb(167,167,167);
+    margin-left: -5px;
+}
+.lnkb .svga{
+    max-width: 25px;
+    height: 25px;
+    margin: 5px;
+    margin-left: -20px;
+    margin-right: 0px;
+    fill: rgb(169, 12, 12);
+}
+.lnkb h3{
+    margin-top: 5px;
+    font-size: larger;
+    font-weight: 200;
+}

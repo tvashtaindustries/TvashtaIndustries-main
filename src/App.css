@@ -4,8 +4,7 @@
   padding: 0;
 }
 * {
-  
-  margin-left: 20px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -51,8 +50,10 @@ body {
   display: flex;
   gap: 20px;
   max-width: 100%;
+  margin: auto;
   justify-content: center;
   padding: 20px;
+  flex-wrap: wrap;
 }
 .container3{
   display: flex;
@@ -61,15 +62,16 @@ body {
   justify-content: left;
   align-items: center;
   padding: 10px;
+  padding-left:0px ;
   flex-wrap: wrap;
-  margin: 1rem -80px;
+  margin: 1rem;
+  margin-left: 0px;
 }
 .about{
   text-align: center;
   font-weight: 600;
   color: black;
   margin-bottom: 0px;
-  padding-right: 20px;
 }
 .container2{
   display: flex;
@@ -77,28 +79,28 @@ body {
   justify-content: left;
   margin-top: 0px;
   padding: 20px;
-  gap: 5vw;
+  gap: 8vw;
 }
 .boldLine{
 
   height: 7px;
   background-color: #e63946;
-  width: 160px;
-  margin: 1.5rem auto;
+  width: 147px;
+  margin: auto;
   margin-top: 3px;
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
 .left{
-  max-width: 35vw;
+  max-width: 50vw;
   text-align: left;
-  margin-left: 10vw;
   margin-top: 3vw;
+  margin-left: 5.75vw;
   padding-left: 0px;
 }
 .left h2{
   text-align: left;
-  font-weight: 600;
+  font-weight: 700;
   color: black;
 }
 .left h4{
@@ -109,18 +111,38 @@ body {
 }
 .container2 .right img{
   margin-top: 40px;
-  max-width: 400px;
+  max-width: 300px;
   border-radius: 15px;
 }
 .btn1{
-  padding: 0.75rem 1.5rem;
+  padding: 0.90rem 1.35rem;
   font-size: 1rem;
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  margin-left: 65px;
-  margin-top: 15px;
   transition: background 0.3s ease, border 0.3s ease;
-  background-color: #e63946;
+  background-color: #e4303f;
   color: white;
+}
+.btn1:hover {
+  background-color: #c00d2b;
+}
+.cont{
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  width: 98.5%;
+  padding: 10px;
+  margin-left: 18px;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+.cont h2,.cont p{
+  text-align: left;
+  padding-left: 20px;
+}
+.FootCont{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }

@@ -1,0 +1,33 @@
+.lnk{
+    color: white;
+    width: 25vw;
+    padding-top:50px;
+    margin-left: 15px;
+}
+.lnk .flex{
+    display: flex;
+    width: 12vw;
+    height: 25px;
+    margin: 10px;
+    margin-left: 20px;
+    align-items: left;
+}
+
+.lnk h2{
+    text-align: left;
+}
+.lnk h4{
+    margin: 5px;
+    text-align: left;
+    color: rgb(167,167,167);
+    margin-left: 0px;
+}
+.lnk .svga{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    margin-left: -20px;
+}
+.lnk h4:hover{
+    color: white;
+}
