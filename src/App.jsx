@@ -9,6 +9,7 @@ import Header from './components/Header'
 import Services from './components/Services'
 import OurProjects from './components/OurProjects'
 import Products from './components/Products'
+import Contact from './Components/Contact'
 
 
 function App() {
@@ -52,7 +53,7 @@ function App() {
     <Services/>
     <OurProjects/>
     <Products/>
-
+    <Contact/>
     <div className="cont">
       <h2>Visit Our Office</h2>
       <p>Find us at our headquarters or at one of our regional offices across India.</p>

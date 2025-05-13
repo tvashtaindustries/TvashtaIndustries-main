@@ -1,0 +1,12 @@
+.Contact .Cont1{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.Contact h1{
+    text-align: center;
+    font-size: 38px;
+    margin: 10px;
+}
