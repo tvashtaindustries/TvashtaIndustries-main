@@ -1,7 +1,7 @@
 import './App.css'
-import Hero from './Components/Hero'
-import Details from './Components/Details'
-import Svgcom from './Components/Svgcom'
+import Hero from './components/Hero'
+import Details from './components/Details'
+import Svgcom from './components/Svgcom'
 
 import FootBlack from './components/FootBlack'
 import HeroSection from './components/HeroSection'
@@ -9,6 +9,7 @@ import Header from './components/Header'
 import Services from './components/Services'
 import OurProjects from './components/OurProjects'
 import Products from './components/Products'
+import Contact from './components/Contact'
 import Testimonials from './components/Testimonials'
 
 
@@ -54,7 +55,7 @@ function App() {
     <OurProjects/>
     <Products/>
     <Testimonials/>
-
+    <Contact/>
     <div className="cont">
       <h2>Visit Our Office</h2>
       <p>Find us at our headquarters or at one of our regional offices across India.</p>
