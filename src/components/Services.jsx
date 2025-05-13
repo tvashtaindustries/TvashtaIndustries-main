@@ -2,6 +2,7 @@ import './RedButton.jsx';
 import './Services.css';
 import image from '../assets/services1.jpeg';
 import RedButton from './RedButton.jsx';
+import React from 'react';
 const services = [
   {
     title: 'Architecture Design',
@@ -41,7 +42,7 @@ const services = [
   },
 ];
 
-export default function Services() {
+export default function Services({onNavClick}) {
   return (
     <div className="services-section">
       <h2 className="services-title">Our Services</h2>
@@ -58,7 +59,7 @@ export default function Services() {
           </div>
         ))}
       </div>
-        <RedButton text = "Request a Consultation"/>
+        <button className="btn1" onClick={onNavClick}>Request a Consultation</button>
     </div>
   );
 } 

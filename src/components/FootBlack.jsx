@@ -7,7 +7,7 @@ import Information from './Information'
 import './FootBlack.css'
 import HeroSection2 from './HeroSection2'
 import FinalComp from './FinalComp'
-const FootBlack = () => {
+const FootBlack = ({onNavClick}) => {
   return (
     <footer className='bg'>
          <div className="hero-section1">
@@ -15,16 +15,16 @@ const FootBlack = () => {
       <div className="hero-content1">
         <h2>Building Tomorrow's Infrastructure Today</h2>
         <p>Partner with Tvashta Industries for innovative solutions that transform your vision into reality.</p>
-        <button className="hero-button1">Start Your Project</button>
+        <button className="hero-button1" onClick={onNavClick.contact}>Start Your Project</button>
       </div>
     </div>
      <div className="botcontainer">
       <Industries/>
-      <Links/>
-      <MyServices/>
+      <Links onNavClick={onNavClick}/>
+      <MyServices onNavClick={onNavClick.services}/>
       <Information/>
      </div>
-     <HeroSection2/>
+     <HeroSection2 onNavClick={onNavClick}/>
      <hr className='thinline'/>
      <FinalComp/>
     </footer>

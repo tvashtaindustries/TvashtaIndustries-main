@@ -1,7 +1,7 @@
 import "./Products.css";
 import RedButton from "./RedButton.jsx";
 import image from '../assets/services2.jpeg';
-export default function Products() {
+export default function Products({onNavClick}) {
 
   let products = [
     {
@@ -78,7 +78,7 @@ export default function Products() {
                   {product.features.map((feature, idx) => {
                     return <li key={idx}>{feature}</li>;
                   })}
-                  <button className="products-btn">View Deatils</button>
+                  <button className="products-btn">View Details</button>
                 </div>
               </div>
             );
@@ -87,7 +87,7 @@ export default function Products() {
         }
       </div>
 
-      <RedButton text="Request Project Catalog" />
+      <button onClick={onNavClick}className="btn1">Request Product Catalog</button>
 
     </div>
   );
