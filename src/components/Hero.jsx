@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 
-const Hero = () => {
+const Hero = ({ onNavClick }) => {
   return (
      <div className="hero">
       <div className="hero-text">
@@ -14,8 +14,8 @@ const Hero = () => {
           from modern structures to elegant home interiors.
         </p>
         <div className="hero-buttons">
-          <button className="btn primary">Explore Services</button>
-          <button className="btn secondary">Contact Us</button>
+          <button className="btn primary" onClick={onNavClick.services}>Explore Services</button>
+          <button className="btn secondary" onClick={onNavClick.contact}>Contact Us</button>
         </div>
       </div>
       <div className="hero-image">

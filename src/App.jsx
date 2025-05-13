@@ -1,3 +1,4 @@
+import React,{useRef} from 'react'
 import './App.css'
 import Hero from './components/Hero'
 import Details from './components/Details'
@@ -14,11 +15,40 @@ import Testimonials from './components/Testimonials'
 
 
 function App() {
+const contactRef = useRef(null); // 1. Create ref to ContactUs section
 
+  const scrollToContact = () => {
+    contactRef.current?.scrollIntoView({ behavior: 'smooth' }); // 2. Scroll to ref
+  };
+  const aboutRef = useRef(null); // 1. Create ref to ContactUs section
+
+  const scrollToAbout = () => {
+    aboutRef.current?.scrollIntoView({ behavior: 'smooth' }); // 2. Scroll to ref
+  };
+  const projectsRef = useRef(null); // 1. Create ref to ContactUs section
+
+  const scrollToProjects = () => {
+    projectsRef.current?.scrollIntoView({ behavior: 'smooth' }); // 2. Scroll to ref
+  };
+  const testimonialsRef = useRef(null); // 1. Create ref to ContactUs section
+
+  const scrollToTestimonials = () => {
+    testimonialsRef.current?.scrollIntoView({ behavior: 'smooth' }); // 2. Scroll to ref
+  };
+  const productsRef = useRef(null); // 1. Create ref to ContactUs section
+
+  const scrollToProducts = () => {
+    productsRef.current?.scrollIntoView({ behavior: 'smooth' }); // 2. Scroll to ref
+  };
+  const servicesRef = useRef(null); // 1. Create ref to ContactUs section
+
+  const scrollToServices = () => {
+    servicesRef.current?.scrollIntoView({ behavior: 'smooth' }); // 2. Scroll to ref
+  };
   return (
     <>
-      <Header/> 
-      <Hero/>
+      <Header  onNavClick={{contact:scrollToContact,about:scrollToAbout,services:scrollToServices,products:scrollToProducts,projects:scrollToProjects}}/> 
+      <Hero onNavClick={{contact:scrollToContact,services:scrollToServices}}/>
     <div className="container">
       <Details title='10+' desc='Years Experience'/>
       <Details title='200+' desc='Projects Completed'/>
@@ -26,7 +56,7 @@ function App() {
       <Details title='98%' desc='Client Satisfaction'/>
 
     </div>
-    <h1 className='about'>About</h1>
+    <h1 className='about' ref={aboutRef}>About</h1>
       <hr className='boldLine'/>
     <div className="container2">
       
@@ -41,7 +71,7 @@ function App() {
       <Svgcom title='Customer Satisfaction' desc='Client-focused approach'/>
 
        </div>
-       <button className='btn1'>Get in Touch</button>
+       <button className='btn1' onClick={scrollToContact}>Get in Touch</button>
 
 
         
@@ -50,18 +80,19 @@ function App() {
         <img src="https://images.unsplash.com/photo-1526546334624-2afe5b01088d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MXx8bW9kZXJuJTIwYXJjaGl0ZWN0dXJlJTIwZmlybSUyMG9mZmljZXxlbnwwfHx8fDE3NDY2ODkzNzN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="" />
       </div>
     </div>
-
-    <Services/>
-    <OurProjects/>
-    <Products/>
-    <Testimonials/>
-    <Contact/>
+    <div ref={servicesRef} ><Services onNavClick={scrollToContact}/></div>
+    <div ref={projectsRef}><OurProjects/></div>
+    <div ref={productsRef}><Products onNavClick={scrollToContact}/></div>
+    <div ref={testimonialsRef}><Testimonials /></div>
+    
+    <div ref={contactRef}><Contact/></div>
+    
     <div className="cont">
       <h2>Visit Our Office</h2>
       <p>Find us at our headquarters or at one of our regional offices across India.</p>
     </div>
     <HeroSection/>
-    <FootBlack/>
+    <FootBlack onNavClick={{testimonials:scrollToTestimonials,contact:scrollToContact,about:scrollToAbout,services:scrollToServices,products:scrollToProducts,projects:scrollToProjects}}/>
 
     </>
 

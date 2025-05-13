@@ -75,13 +75,7 @@ export default function Testimonials() {
       </section>
 
 
-
-
-
-
-
-
-      <RedButton text="View More Testimonials" />
+      <button className="btn1">View More Testimonials</button>
     </div>
   );
 }
