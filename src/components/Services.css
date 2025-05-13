@@ -8,7 +8,7 @@
   .services-title {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     color: #1a202c;
   }
   
@@ -19,7 +19,6 @@
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
   }
   
   .services-cards {
@@ -73,7 +72,6 @@
     font-size: 1.05rem;
     margin-bottom: 1.2rem;
     opacity: 0.9;
-    line-height: 1.5;
   }
   
   .service-link {

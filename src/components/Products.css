@@ -1,6 +1,6 @@
 .products-section{
+  max-width: 1200px;
     text-align: center;
-    background-color: #f9f9f9;
     margin: 48px auto;
     padding: 50px 24px;
     text-align: center;
@@ -33,7 +33,6 @@
   }
 
   .products-card {
-    position: relative;
     background: #fff;
     border-radius: 16px;
     overflow: hidden;
@@ -120,3 +119,10 @@
   .products-btn:hover {
     background-color: #cc2f3d;
   }
+
+  .red-button{
+
+    margin-bottom : 10px;
+    
+  
+}

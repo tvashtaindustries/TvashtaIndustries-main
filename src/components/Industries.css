@@ -1,0 +1,46 @@
+.indus{
+    color: white;
+    width: 25vw;
+    padding-top:50px;
+}
+.con{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 5px;
+}
+.indus h2,.indus h3{
+    text-align: left;
+    color: white;
+    padding: 5px;
+}
+.indus .con .lef{
+    color: white;
+    background-color: rgb(242, 18, 78);
+    border-radius:5px;
+    padding: 15px 22px;
+    font-weight: 700;
+    margin: 5px;
+    margin-right: 10px;
+}
+.indus .svga{
+    display: flex;
+    width: 20vw;
+    padding: 5px;
+}
+.indus .con .rig{
+    margin: 5px;
+}
+.indus h4{
+    margin: 5px;
+    text-align: left;
+    color: rgb(167,167,167);
+}
+.indus .con h4{
+    margin: 1px;
+}
+.svga .hvr{
+    background-color: #0f0e0e;
+    max-height: 30px;
+    margin: 5px;
+}
