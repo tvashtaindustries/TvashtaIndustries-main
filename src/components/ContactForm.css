@@ -6,11 +6,10 @@
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(128, 19, 19, 0.08);
-  
 }
 
 .form-wrapper h2 {
-    text-align: left;
+  text-align: left;
   margin-bottom: 24px;
   font-size: 26px;
   color: #111;
