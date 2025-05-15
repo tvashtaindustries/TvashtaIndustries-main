@@ -20,7 +20,12 @@ const contactRef = useRef(null); // 1. Create ref to ContactUs section
   const scrollToContact = () => {
     contactRef.current?.scrollIntoView({ behavior: 'smooth' }); // 2. Scroll to ref
   };
-  const aboutRef = useRef(null); // 1. Create ref to ContactUs section
+  const homeRef = useRef(null); // 1. Create ref to ContactUs section
+
+  const scrollToHome = () => {
+    homeRef.current?.scrollIntoView({ behavior: 'smooth' }); // 2. Scroll to ref
+  };
+  const aboutRef = useRef(null); 
 
   const scrollToAbout = () => {
     aboutRef.current?.scrollIntoView({ behavior: 'smooth' }); // 2. Scroll to ref
@@ -47,7 +52,8 @@ const contactRef = useRef(null); // 1. Create ref to ContactUs section
   };
   return (
     <>
-      <Header  onNavClick={{contact:scrollToContact,about:scrollToAbout,services:scrollToServices,products:scrollToProducts,projects:scrollToProjects}}/> 
+    <div useRef={homeRef}>
+      <Header onNavClick={{home:scrollToHome,contact:scrollToContact,about:scrollToAbout,services:scrollToServices,products:scrollToProducts,projects:scrollToProjects}}/> </div>
       <Hero onNavClick={{contact:scrollToContact,services:scrollToServices}}/>
     <div className="container">
       <Details title='10+' desc='Years Experience'/>

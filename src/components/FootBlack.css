@@ -2,14 +2,47 @@
 
 .bg{
     background-color: #0f0e0e;
-    width: 100%;
+    max-width: 100%;
     padding: 20px;
+    
+    
 }
-.botcontainer{
-  width: 100vw;
+.botcontainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; 
+  align-items: flex-start;
+  max-width: 100%;
+  padding: 20px 5%;
+  gap: 20px;
+  box-sizing: border-box;
 }
+
+@media (max-width: 768px) {
+  .botcontainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .lnka, .lnkb, .lnk {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .lnka .flex,
+  .lnkb .flex,
+  .lnk .flex {
+    justify-content: center;
+  }
+
+  .lnk h4,
+  .lnka h4,
+  .lnkb h4 {
+    text-align: center;
+  }
+}
+
 .hero-section1 {
   position: relative;
   height: 250px;
@@ -19,9 +52,12 @@
   justify-content: left;
   text-align: left;
   border-radius: 5px;
+  background-position: center center;
+  background-size: cover;
 }
 
 .hero-overlay1 {
+  
   position: absolute;
   top: 0;
   left: 0;
@@ -32,14 +68,14 @@
 }
 
 .hero-content1 {
-    width: 45vw;
+    width: 100%;
+    max-width: 100%;
     align-items: center;
     justify-content: left;
   position: relative;
   color: rgb(255, 255, 255);
   z-index: 1;
-  padding: 20px;
-  padding-left: 4rem;
+  padding: 20px 1.5rem;
 }
 
 .hero-content1 h2 {
@@ -58,7 +94,6 @@
 }
 
 .hero-button1 {
-    margin: auto;
   background-color: #d61f2f;
   border: none;
   color: white;
@@ -67,11 +102,44 @@
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.3s ease;
+  margin-top: 10px;
 }
 
 .hero-button1:hover {
   background-color: #ae0c27;
 }
+@media (max-width: 842px) {
+  .hero-section1 {
+    height: auto;
+    padding: 40px 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-content1 {
+    width: 100%;
+    max-width: 650px;
+    padding: 20px;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .hero-content1 h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .hero-content1 p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .hero-button1 {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
+
 .thinline{
    border: none;
   height: 0.25px;
