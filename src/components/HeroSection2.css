@@ -27,6 +27,9 @@
 }
 
 .hero-content2 {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
     align-items: center;
     justify-content: center;
   position: relative;
@@ -82,3 +85,32 @@
   background-color: white;
   color: black;
 }
+
+@media (max-width: 600px) {
+  .hero-section2 {
+    height: auto;
+    padding: 40px 20px;
+    border-radius: 5px;
+  }
+
+  .hero-content2 h4 {
+    font-size: 1.3rem;
+  }
+
+  .hero-content2 p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .btncon {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-button21,
+  .hero-button22 {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+

@@ -1,12 +1,15 @@
 .indus{
     color: white;
-    width: 25vw;
+    width: 100%;
     padding-top:50px;
+    max-width: 100%;
 }
-.con{
+.indus .con{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: left;
+    justify-content: flex-start;
+     gap: 10px;
     padding: 5px;
 }
 .indus h2,.indus h3{
@@ -23,11 +26,17 @@
     margin: 5px;
     margin-right: 10px;
 }
-.indus .svga{
-    display: flex;
-    width: 20vw;
-    padding: 5px;
+.indus .svga {
+  display: flex;
+  flex-wrap: wrap;            /* Allows wrapping on small screens */
+  justify-content: center;    /* Centers icons nicely */
+  gap: 12px;                  /* Adds spacing between SVGs */
+  width: 100%;
+  max-width: 300px;           /* Optional: prevent SVGs from stretching too far */
+  margin: auto;
+  padding: 10px 0;
 }
+
 .indus .con .rig{
     margin: 5px;
 }
@@ -43,4 +52,10 @@
     background-color: #0f0e0e;
     max-height: 30px;
     margin: 5px;
+      width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+.svga .hvr:hover {
+  transform: scale(1.1);
 }

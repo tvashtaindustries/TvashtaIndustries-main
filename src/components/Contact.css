@@ -1,11 +1,36 @@
-.Contact .Cont1{
-    display:flex;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
+.Contact .Cont1 {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: center;
+  flex-wrap: nowrap; 
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+  gap: 20px; 
 }
+@media (max-width: 768px) {
+  .Contact .Cont1 {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+
 .Contact h1{
     text-align: center;
     font-size: 38px;
     margin: 10px;
+}
+.Contact h4{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .Contact .Cont1 {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+.Contact {
+    padding: 20px;
 }

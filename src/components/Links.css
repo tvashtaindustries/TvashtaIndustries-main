@@ -1,33 +1,62 @@
-.lnk{
-    color: white;
-    width: 25vw;
-    padding-top:50px;
-    margin-left: 15px;
-}
-.lnk .flex{
-    display: flex;
-    width: 12vw;
-    height: 25px;
-    margin: 10px;
-    margin-left: 20px;
-    align-items: left;
+.lnk {
+  color: white;
+  flex: 1 1 250px;
+  padding-top: 50px;
+  box-sizing: border-box;
 }
 
-.lnk h2{
-    text-align: left;
+.lnk .flex {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 500px;
+  flex-wrap: nowrap;
 }
-.lnk h4{
-    margin: 5px;
-    text-align: left;
-    color: rgb(167,167,167);
-    margin-left: 0px;
+
+.lnk h2 {
+  text-align: left;
+  font-size: 1.5rem;
 }
-.lnk .svga{
-    width: 20px;
-    height: 20px;
-    margin: 5px;
-    margin-left: -20px;
+
+.lnk h4 {
+  margin: 0;
+  text-align: left;
+  color: rgb(167, 167, 167);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  word-break: break-word;
 }
-.lnk h4:hover{
-    color: white;
+
+.lnk h4:hover {
+  color: white;
+}
+
+.lnk .svga {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-left: 0;
+}
+@media (max-width: 768px) {
+  .lnk {
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .lnk .flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .lnk h2 {
+    text-align: center;
+  }
+
+  .lnk h4 {
+    text-align: center;
+  }
 }
