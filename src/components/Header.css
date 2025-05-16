@@ -78,7 +78,12 @@
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5vh;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    font-family: Geneva
   }
 
   .navbar-links {

@@ -1,5 +1,6 @@
 import React,{useRef} from 'react'
 import './App.css'
+import './output.css';
 import Hero from './components/Hero'
 import Details from './components/Details'
 import Svgcom from './components/Svgcom'
