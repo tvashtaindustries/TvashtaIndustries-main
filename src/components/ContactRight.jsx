@@ -6,7 +6,7 @@ const ContactRight = () => {
       <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MXx8bW9kZXJuJTIwaW5kdXN0cmlhbCUyMG9mZmljZSUyMGNvbnRhY3QlMjBkZXNrfGVufDF8fHx8MTc0NjY5MTAyNHww&ixlib=rb-4.1.0&q=80&w=1080"/>
       
       <div className='lnkb'>
-      <h2 className='ci'>Our Contact Information</h2>
+      <h2 >Our Contact Information</h2>
       <div className="flex">
         <svg  className='svga'  stroke="#e5094f" strokeWidth="1" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
