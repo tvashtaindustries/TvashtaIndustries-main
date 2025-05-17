@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './ContactForm.css';
 import axios from 'axios'; 
+import toast from 'react-hot-toast';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -23,15 +24,15 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.consent) {
-      alert('Please agree to the consent checkbox');
+      toast.error('Please agree to the consent checkbox');
       return;
     }
 
     try {
       await axios.post('http://localhost:5000/send-email', formData);
-      alert('Inquiry sent successfully!');
+      toast.success("Inquiry sent successfully!");
     } catch (err) {
-      alert('Failed to send inquiry.');
+      toast.error('Failed to send inquiry.');
       console.error(err);
     }
   };
