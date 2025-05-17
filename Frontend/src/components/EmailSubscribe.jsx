@@ -1,6 +1,7 @@
 import React ,{ useState } from 'react';
 import './EmailSubscribe.css';
 import axios from 'axios';
+import toast from 'react-hot-toast';
 
 const EmailSubscribe = () => {
   const [email,setEmail] = useState('');
@@ -10,15 +11,15 @@ const EmailSubscribe = () => {
   const HandleSubmit = async (e) => {
     e.preventDefault();
     if (!email) {
-      alert('Please enter a valid email address');
+      toast.error('Please enter a valid email address');
       return;
     }
 
     try {
       await axios.post('http://localhost:5000/subscribe', {email});
-      alert('Inquiry sent successfully!');
+      toast.success('Subscribed to newsletter successfully!');
     } catch (err) {
-      alert('Failed to send inquiry.');
+      toast.error('Failed to send confirmation.');
       console.error(err);
     }
   };

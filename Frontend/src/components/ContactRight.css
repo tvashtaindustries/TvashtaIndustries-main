@@ -1,0 +1,139 @@
+.CR {
+  width: 90%;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 40px auto;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(128, 19, 19, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.CR img {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.CR .lnkb {
+  color: #414141;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.CR .lnkb .flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  margin: 15px 0;
+  max-width: 40vw;
+  min-width: 25vw;
+}
+
+.CR .lnkb h2,
+.CR .lnkb .h2 {
+  text-align: left;
+  font-size: 22px;
+  margin: 20px 5px 5px 0;
+}
+
+.CR .lnkb h3 {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 0;
+  color: #4c4c4c;
+}
+
+.CR .lnkb h4 {
+  margin: 5px 0;
+  color: rgb(79, 79, 79);
+  font-weight: 400;
+  text-align: left;
+}
+
+.CR .lnkb .svga {
+  min-width: 50px;
+    height: 50px;
+    padding: 12px;
+    background-color:rgb(249, 217, 223);
+    color: rgb(249, 217, 223);
+     border: 1px;
+     border-radius: 50%;
+  fill: rgb(249, 217, 223);
+}
+
+.flex .detai {
+  min-width: 200px;
+  max-width: 100%;
+}
+
+.svgflex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 2.15rem;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.svgflex .svga {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgb(255, 213, 213);
+  fill: rgb(236, 42, 42);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ======================== MEDIA QUERY FOR SMALL DEVICES ======================== */
+@media (max-width: 768px) {
+  .CR {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .CR .lnkb {
+    padding: 20px;
+  }
+
+  .CR .lnkb .flex {
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .CR .lnkb h2,
+  .CR .lnkb .h2,
+  .CR .lnkb h3,
+  .CR .lnkb h4 {
+    text-align: center;
+  }
+
+  .CR .lnkb .ci {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .svgflex {
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .svgflex .svga {
+    margin: 0;
+  }
+}
+ 

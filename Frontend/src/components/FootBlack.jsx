@@ -20,6 +20,8 @@ const FootBlack = ({onNavClick}) => {
     </div>
      <div className="botcontainer">
       <Industries/>
+      </div>
+      <div className="botcontainer">
       <Links onNavClick={onNavClick}/>
       <MyServices onNavClick={onNavClick.services}/>
       <Information/>

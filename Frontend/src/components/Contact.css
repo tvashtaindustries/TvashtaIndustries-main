@@ -13,6 +13,36 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+  }.Contact .Cont1 {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+    flex-wrap: nowrap; 
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    gap: 20px; 
+  }
+  @media (max-width: 768px) {
+    .Contact .Cont1 {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+  }
+  
+  
+  .Contact h1{
+      text-align: center;
+      font-size: 38px;
+      margin: 10px;
+  }
+  .Contact h4{
+      text-align: center;
+  }
+  
+  .Contact {
+      padding: 20px;
   }
 }
 
