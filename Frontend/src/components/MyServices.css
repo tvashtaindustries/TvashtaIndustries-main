@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-.lnka .flex {
+.lnka .flx {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -46,8 +46,7 @@
     text-align: center;
   }
 
-  .lnka .flex {
-    flex-direction: column;
+  .lnka .flx {
     align-items: center;
     gap: 6px;
   }

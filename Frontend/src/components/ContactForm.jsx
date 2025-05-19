@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './ContactForm.css';
-import axios from 'axios'; 
+import axios from 'axios';
 import toast from 'react-hot-toast';
 
 const ContactForm = () => {
@@ -12,6 +12,7 @@ const ContactForm = () => {
     message: '',
     consent: false,
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -27,14 +28,17 @@ const ContactForm = () => {
       toast.error('Please agree to the consent checkbox');
       return;
     }
-
+    setIsSubmitting(true);
     try {
       await axios.post('http://localhost:5000/send-email', formData);
       toast.success("Inquiry sent successfully!");
     } catch (err) {
       toast.error('Failed to send inquiry.');
       console.error(err);
+    } finally {
+      setIsSubmitting(false); // end loading
     }
+
   };
 
   return (
@@ -86,7 +90,12 @@ const ContactForm = () => {
           </label>
         </div>
 
-        <button type="submit" className="submit-button">Submit Inquiry</button>
+        <button type="submit" className="submit-button" disabled={isSubmitting}>{isSubmitting ?
+          <div className="btn-spinner-wrapper">
+            <span className="spinner"></span>
+            <span>Submitting</span>
+          </div> : 'Submit Inquiry'}
+        </button>
       </form>
     </div>
   );
