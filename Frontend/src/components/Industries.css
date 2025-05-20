@@ -15,7 +15,11 @@
 .indus h2,.indus h3{
     text-align: left;
     color: white;
-    padding: 5px;
+}
+.indus h2{
+    padding-left: 5px;
+    font-size: 25px;
+    font-weight: bold;
 }
 .indus .con .lef{
     color: white;

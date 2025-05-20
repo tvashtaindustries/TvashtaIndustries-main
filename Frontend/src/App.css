@@ -187,6 +187,11 @@ body {
   text-align: left;
   padding-left: 20px;
 }
+.cont h2{
+  font-size: 25px;
+  font-weight: bold;
+}
+
 .FootCont{
   display: flex;
   flex-wrap: wrap;

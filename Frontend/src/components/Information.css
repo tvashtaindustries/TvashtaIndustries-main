@@ -16,7 +16,9 @@
 
 
 .lnkb h2{
+  font-size: 1.5rem;
     text-align: left;
+    font-weight: bold;
 }
 .lnkb .svga {
   width: 22px;

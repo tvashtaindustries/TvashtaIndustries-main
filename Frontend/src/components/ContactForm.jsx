@@ -84,7 +84,7 @@ const ContactForm = () => {
         </div>
 
         <div className="form-check">
-          <input type="checkbox" id="consent" name="consent" checked={formData.consent} onChange={handleChange} />
+          <input type="checkbox" id="consent" name="consent" class="consent" checked={formData.consent} onChange={handleChange} />
           <label htmlFor="consent">
             I agree to the processing of my personal data for contact purposes
           </label>
