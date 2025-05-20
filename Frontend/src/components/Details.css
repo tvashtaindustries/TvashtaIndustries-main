@@ -1,9 +1,14 @@
 .det{
     margin-top: 15px;
     padding: 5px;
-    min-width: 20vw;
+    min-width: 200px;
     border: 1px solid rgb(142, 138, 138);
     border-radius: 10px;
+}
+@media(max-width:462px){
+    .det{
+        min-width: 155px;
+    }
 }
 h2{
     padding: 0px;
